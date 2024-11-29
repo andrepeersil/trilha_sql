@@ -10,7 +10,3 @@ from tb_products
 where product_category_name is not NULL
 
 group by product_category_name
-
-
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
