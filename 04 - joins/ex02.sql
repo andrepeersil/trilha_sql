@@ -3,7 +3,8 @@
 
 select
     t2.seller_state as vendedores_uf,
-    round(sum(t1.price), 2) as receita
+    round(sum(t1.price), 2) as receita,
+    round(sum(t1.price) / count(distinct t2.seller_id), 2) as receita_media_vendedor
 
 from tb_order_items as t1
 

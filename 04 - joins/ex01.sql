@@ -3,7 +3,8 @@
 
 select
     t2.customer_state as clientes_uf,
-    round(sum(t3.price), 2) as receita
+    round(sum(t3.price), 2) as receita,
+    round(sum(t3.price) / count(distinct t2.customer_id)) as media_receita_cliente
 
 from tb_orders as t1
 
