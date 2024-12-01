@@ -13,3 +13,5 @@ where product_category_name is not NULL
 group by product_category_name
 
 having avg(product_description_lenght) > 500
+
+order by avg_name DESC
